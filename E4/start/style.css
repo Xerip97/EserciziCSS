@@ -1,3 +1,6 @@
+:root{
+    --font-size-button: 3.8vmin;
+}
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.8vmin;
+    font-size: var(--font-size-button);
     font-weight: bold;
 }
 .op{
@@ -30,7 +33,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(130, 164, 196);
-    font-size: 3.8vmin;
+    font-size: var(--font-size-button);
     font-weight: bold;
 }
 .screen{
@@ -43,13 +46,21 @@
     font-size: 8vmin;
     padding-right: 1.2vmin;
 }
-
 .equal{
     grid-area: 3 / 4 / 7 / 5;
     background-color: rgb(230, 25, 25);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.8vmin;
+    font-size: var(--font-size-button);
     font-weight: bold;
+}
+.num:hover{
+    background-color: rgb(184, 181, 197);
+}
+.op:hover{
+    background-color: rgb(93, 117, 139);
+}
+.equal:hover{
+    background-color: rgb(212, 29, 29);
 }
